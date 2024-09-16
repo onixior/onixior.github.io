@@ -1,6 +1,6 @@
 # hi this is my website bigger title one hashtag
 
-this is markdown and it's a powerful formatting language that's optimized for human intrepretation. 
+this is markdown and it's a powerful formatting language that's optimized for human intrepretation. this is my home repository, where progress on my website will be posted. thanks for reading!
 
 
 ## markdown formatting header two hashtags
