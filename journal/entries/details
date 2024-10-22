@@ -1,0 +1,30 @@
+# lists, pictures, tables, pictures, links, and etc! 
+
+1. item one 
+2. item two 
+3. item three 
+
+- item 1 
+- item 2
+- item 3 
+
+[i like youtube](https://www.youtube.com) 
+
+## pictures below 
+
+![here's a picture of a horse](horse.jpg)
+
+### note that pictures have an additional exclamation mark for readers. 
+
+
+## now we'll do equations. 
+
+$y = mx + b$
+
+* latex mode is indicated with dollar signs at the beginning and end of the equations. 
+
+$f(x) = x^2$
+
+$f(x) = /frac{3}{4}$
+
+* fractions are marked with swirly brackets. 
