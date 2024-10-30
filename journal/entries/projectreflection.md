@@ -2,7 +2,7 @@
 
 # reflection for my wordpress project! 
 
-## link to wordpress website: [project](ikigaicafe6.wordpress.com)
+## link to wordpress website: [project](https://ikigaicafe6.wordpress.com/)
 
 ## reflection below: 
 
