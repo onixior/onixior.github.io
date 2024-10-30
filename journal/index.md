@@ -6,5 +6,7 @@
 
 
 # entries
+[my wordpress website](ikigaicafe6.wordpress.com)
+projectreflection.md 
 
 
