@@ -1,0 +1,16 @@
+body{ 
+	background-color:AliceBlue;
+}
+header{
+	background-color:White;
+}
+td , th , table{
+	border:1px solid;
+	border-collapse:collapse;
+}
+nav{
+	background-color:LightSteelBlue;
+}
+footer{
+	background-color:LightSteelBlue;
+}
