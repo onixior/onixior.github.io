@@ -1,8 +1,6 @@
 /* adjusting image dimensions using box model properties! */
-#flowerHeaders {
 /* adjusting dimensions for flower headers */
 #flowerHeaders {
-	max-width: 100%;
 	width: 20px;
 	length: 1100px;
 	border-color: white;
@@ -13,7 +11,7 @@
 
 
 /* below, i'll be adding in the fonts for my h1 welcome tag. */
-h1{ 
+h1 {
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 5vw;
