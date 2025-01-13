@@ -1,22 +1,12 @@
 */ google font import for homepage */ 
-
-// <uniquifier>: Use a unique and descriptive class name
-// <weight>: Use a value from 100 to 1000
-
-.dm-sans-<dmSans> {
-  font-family: "DM Sans", serif;
-  font-optical-sizing: auto;
-  font-weight: <200>;
-  font-style: normal;
-}
-
 */ below, i'll be adding in the fonts for my h1 welcome tag. */
-h1 { 
+h1{ 
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 10vw;
 	letter-spacing: 2px;
 }
+
 	
 		
 		
