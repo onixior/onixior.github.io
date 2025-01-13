@@ -9,6 +9,7 @@
 	border-style: solid;
 	margin-top:0px;
 	margin-bottom:100px;
+}
 
 
 /* below, i'll be adding in the fonts for my h1 welcome tag. */
@@ -21,7 +22,7 @@ h1{
 
 /* changing fonts for h2 tags. */
 .quotes {
-	font-family: Josefin Sans, Arial, sans-serif;
+	font-family: "Josefin Sans", sans-serif;
 	margin-top: 100px;
 	margin-bottom: 100px;
 	font-style: italic;
