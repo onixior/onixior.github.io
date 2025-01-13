@@ -3,16 +3,12 @@
 /* adjusting dimensions for flower headers */
 #flowerHeaders {
 	max-width: 100%;
-	background-size: 100% 15;
-	top:0;
+	width: 20px;
+	length: 1100px;
 	border-color: white;
 	border-style: solid;
-}
-
-
-
-
-
+	margin-top:0px;
+	margin-bottom:100px;
 
 
 /* below, i'll be adding in the fonts for my h1 welcome tag. */
@@ -21,6 +17,14 @@ h1{
 	font-weight: bold;
 	font-size: 5vw;
 	letter-spacing: 2px;
+}
+
+/* changing fonts for h2 tags. */
+.quotes {
+	font-family: Josefin Sans, Arial, sans-serif;
+	margin-top: 100px;
+	margin-bottom: 100px;
+	font-style: italic;
 }
 
 
