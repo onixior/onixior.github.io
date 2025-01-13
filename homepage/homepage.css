@@ -10,11 +10,11 @@
   font-style: normal;
 }
 
-*/below, i'll be adding in the fonts for my h1 welcome tag. */
+*/ below, i'll be adding in the fonts for my h1 welcome tag. */
 h1 { 
 	font-family: Helvetica, Arial, sans-serif;
 	font-weight: bold;
-	font-size: 10vw
+	font-size: 10vw;
 	letter-spacing: 2px;
 }
 	
