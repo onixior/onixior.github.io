@@ -23,32 +23,58 @@
       border: 1px solid #fff; /* Optional border for better visual separation */
     }
 
-    /* Color specific squares */
-    .grid-container div:nth-child(1),
-    .grid-container div:nth-child(5),
-    .grid-container div:nth-child(7){
-        background-color:black;
+    /* coloring edges and keys of piano. */
+    .grid-container div:nth-child(21),
+    .grid-container div:nth-child(31),
+    .grid-container div:nth-child(41),
+    .grid-container div:nth-child(30),
+    .grid-container div:nth-child(40),
+    .grid-container div:nth-child(50) {
+        background-color: #000080;
     }
     
-    /* Color every even square */
-    .grid-container div:nth-child(even) {
-      background-color: #76b5c5;
+    /* coloring keys of piano */
+    .grid-container div:nth-child(23),
+    .grid-container div:nth-child(33), 
+    .grid-container div:nth-child(43),
+    .grid-container div:nth-child(25), 
+    .grid-container div:nth-child(35),
+    .grid-container div:nth-child(45),
+    .grid-container div:nth-child(27),
+    .grid-container div:nth-child(37),
+    .grid-container div:nth-child(47),
+    .grid-container div:nth-child(29),
+    .grid-container div:nth-child(39),
+    .grid-container div:nth-child(49) {
+	background-color: #000000;
     }
 
-    /* Color every 3rd square */
-    .grid-container div:nth-child(3n) {
-      background-color: #ffcc5c;
-    }
+    /* coloring white spaces */
+    .grid-container div:nth-child(22),
+    .grid-container div:nth-child(32),
+    .grid-container div:nth-child(42),
+    .grid-container div:nth-child(24),
+    .grid-container div:nth-child(34),
+    .grid-container div:nth-child(44),
+    .grid-container div:nth-child(26),
+    .grid-container div:nth-child(36),
+    .grid-container div:nth-child(46),
+    .grid-container div:nth-child(28),
+    .grid-container div:nth-child(38),
+    .grid-container div:nth-child(48) {
+      background-color: #FFFFFF;
+     }
 
     /*
         We can use this syntax to select a range:
         - `div:nth-child(n+41)`: Selects all `div` elements that are the 41st child or later.
         - `:nth-child(-n+50)`: Selects all `div` elements that are the 50th child or earlier.
     */
-    .grid-container div:nth-child(n+41):nth-child(-n+50) {
-      background-color: #f78da7;
+    .grid-container div:nth-child(n+1):nth-child(-n+20) {
+      background-color: #000080;
     }
-  </style>
+   
+</style>
 </head>
 <body>
   <div class="grid-container">
