@@ -1,0 +1,50 @@
+
+.container-grid {
+	display:grid;
+	grid-template-columns: auto auto auto auto;
+	grid-gap: 20px; 
+	grid-template-rows: 300px 300px;
+}
+
+.dimensions { 
+	overflow: hidden;
+	grid-column: 1;
+	grid-row: 1;
+}
+
+#dimensions { 
+	object-fit: cover;
+	width:45%;
+	height:35%;
+}
+
+.minmax {
+	overflow: hidden; 
+	grid-column: 2;
+	grid-row: 1;
+
+#minmax { 
+	height:35%;
+	width:45%;
+	object-fit: cover;
+	min-height: 20%;
+	max-height: 35%;
+	min-width:20%;
+	max-width:45%;
+}
+
+.alignposition { 
+	overflow: hidden;
+	grid-column: 3;
+        grid-row: 1;
+}
+
+#alignposition { 
+	width:45%;
+	height:20%; 
+	object-fit: cover;
+}
+	
+
+
+
