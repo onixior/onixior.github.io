@@ -1,12 +1,25 @@
 /* adjusting image dimensions using box model properties! */
 /* adjusting dimensions for flower headers */
 #flowerHeaders {
-	width: 20px;
+	width: 100px;
+	border-style: solid;
+	border-color: black;
 	length: 1100px;
 	border-color: white;
 	border-style: solid;
 	margin-top:0px;
 	margin-bottom:100px;
+	
+}
+
+#flowerHeaders { 
+	transition-property: width;
+	transition-duration: 2s;
+	transition-timing-function: linear;
+}
+
+#flowerHeaders:hover {
+	width: 500px;
 }
 
 
