@@ -1,5 +1,16 @@
 # hi this is my website bigger title one hashtag
 
+
+# welcome to my markdown! 
+
+Please visit my homepage [here](https://onixior.github.io/homepage/index.html).
+
+If you are not redirected automatically, click [here](https://onixior.github.io/homepage/index.html).
+
+
+
+
+
 this is markdown and it's a powerful formatting language that's optimized for human intrepretation. this is my home repository, where progress on my website will be posted. thanks for reading!
 
 
