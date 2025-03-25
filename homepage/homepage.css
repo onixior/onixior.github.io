@@ -39,7 +39,41 @@ h1 {
 	font-style: italic;
 }
 
-
+/* setting the grid layout for the teal squares */
+.tealPictures { 
+	display: grid; 
+	grid-template-columns: auto auto auto auto;
+	grid-template-rows: 300px;
+	overflow: hidden;
+	row-gap: 10px;
+	column-gap: 1px;
 	
-		
-		
+}
+/* setting object-fit properties */
+#left { 
+	object-fit: cover; 
+	overflow: hidden;
+} 
+#right { 
+	object-fit: cover;
+	overflow: hidden; 
+}
+/* adding grid layout to the teal images */
+
+@media screen and (max-width: 375px) { 
+	.tealPictures {
+	grid-template-areas: 
+         'blue1'
+ 	 'blue2';
+  }
+}
+/* defining names */
+#left { 
+	grid-area: blue1; 
+	max-height: 100%;
+} 
+#right { 
+	grid-area: blue2;
+	max-height: 100%;
+}		
+
