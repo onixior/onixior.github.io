@@ -64,4 +64,10 @@ We'll use this to inform our study plan for the test.
 	[link to comments html!](comments.html)
 	
  	i forgot the syntax to comments in html, so i decided to review it. i now know the proper syntax, so i'll regrade my c grade to an a!
-
+       
+    **blockquote, q, cite, and abbr tags** 
+	
+	[link to blockquote and other pages](quotes.html)
+	
+	i forgot the syntax and purpose for the <abbr> tag. 
+	<abbr title="World Health Organzation>WHO</abbr> was founded in 1948. The purpose of the ABR tag is to insert acronyms and shortened phrases in the text. 
