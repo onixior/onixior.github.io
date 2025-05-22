@@ -2,6 +2,12 @@ const canvas = document.getElementById("mycanvas");
 
 const ctx = canvas.getContext("2d");
 
+const guessInput = canvas.getElementById("guessInput");
+
+const submitInput = canvas.getElementById("submitInput");
+
+const resultElement = canvas.getElementById("resultElement");
+
 //main background where the game will be.    
 ctx.fillStyle = "PowderBlue";
 ctx.fillRect(0,0, 700, 700);
@@ -41,6 +47,8 @@ ctx.font = "20px Arial";
 ctx.fillText("Guess a number from 1-20 using the up and down arrow keys!", 70, 150);
 ctx.fillText("You have 10 attempts.", 230, 180)
 //defining main game 
+
+
 
 
 

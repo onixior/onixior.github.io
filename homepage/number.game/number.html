@@ -30,7 +30,14 @@
 			
 			width: 200px;
 		}
+		
+		#submitInput { 
 			
+			position: absolute;
+			left: 130px;
+			color: DarkSlateGray;
+ 		}
+		
 		</style>
 </head>
 <body>
@@ -42,11 +49,12 @@
 		<div class="main">
           <form action="action_page.php" method="GET">
 		<label for="guessInput">Enter your guess:</label>
-		<input type="text" id="guessInput" name="guessInput" class="guessInput" placeholder="1-20">
-		<input type="submit" value="Submit guess" class="guessSubmit">
+		<input type="text" id="guessInput" name="guessInput" class="guessInput" placeholder="1-20"><br>
+		<button type="submit" id="submitInput">Submit</button>	
 	  </form>
 	</div>
 	</div> 
+	<p id="resultElement"></p>
 	<script src="number.js">
 	</script>
 
