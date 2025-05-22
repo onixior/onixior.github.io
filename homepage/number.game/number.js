@@ -2,11 +2,10 @@ const canvas = document.getElementById("mycanvas");
 
 const ctx = canvas.getContext("2d");
 
-const guessInput = canvas.getElementById("guessInput");
+//generating random number to be guessed.
+let number = [Math.floor(Math.random() * 20)]
 
-const submitInput = canvas.getElementById("submitInput");
 
-const resultElement = canvas.getElementById("resultElement");
 
 //main background where the game will be.    
 ctx.fillStyle = "PowderBlue";
