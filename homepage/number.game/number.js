@@ -21,6 +21,17 @@ ctx.fillStyle = "DarkSlateGray"
 ctx.fill(); 
 ctx.stroke();
 
+//making triangle at the bottom right corner with the circle
+ctx.beginPath();
+ctx.moveTo(750,700);
+ctx.lineTo(950,900);
+ctx.lineTo(750,900);
+ctx.lineTo(750,700);
+ctx.fillStyle = "CadetBlue"
+ctx.fill();
+ctx.stroke();
+
+
 //title of game on the top-left
 ctx.font = "50px Arial";
 ctx.fillText("New Numbers", 10, 50);
@@ -30,5 +41,7 @@ ctx.font = "20px Arial";
 ctx.fillText("Guess a number from 1-20 using the up and down arrow keys!", 70, 150);
 ctx.fillText("You have 10 attempts.", 230, 180)
 //defining main game 
+
+
 
 
