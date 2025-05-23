@@ -55,7 +55,10 @@ function checkGuess() {
 	   guessInput.
 	   focus();
 	}
-
+       
+	if (gameRunning === true) { 
+		checkGuess();
+	}	
 
 
 
