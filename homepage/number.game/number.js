@@ -3,7 +3,7 @@ const canvas = document.getElementById("mycanvas");
 const ctx = canvas.getContext("2d");
 
 //generating random number to be guessed.
-let number = [Math.floor(Math.random() * 50) + 1];
+let number = Math.floor(Math.random() * 50) + 1;
 
 //query selectors for input statements in response to guess.
 const guessesLeft = document.querySelector('.guessesLeft');
@@ -12,11 +12,50 @@ const loworHi = document.querySelector('.loworHi');
 
 //query selectors for the input and submit input. 
 const guessInput = document.querySelector('.guessInput');
-const.guessSubmit = document.querySelector('.guessSubmit');
+const guessSubmit = document.querySelector('.guessSubmit');
 
 //variable assigning to guess and resetting the game.
 let guessCount = 1;
 let resetButton;
+let gameRunning = true;
+
+function checkGuess() { 
+	const userGuess = Number(guessInput.value);
+	if (guessCount === 1) {
+		guessesLeft.textContent = 'Previous guesses: ';
+	}
+//spaced so the values have a gap when displayed.
+	guessesLeft.textContent += userGuess + ' ';
+	
+	if (userGuess === number) { 
+		finalResult.textContent = 'You got the number right!';
+		finalResult.style.backgroundColor = 'green';
+		loworHi.textContent = '';
+		gameRunning = false;
+		setGameOver();
+	} else if (guessCount === 10) { 
+		finalResult.textContent = 'GAME OVER!';
+		loworHi.textContent = '';
+		gameRunning = false;
+		setGameOver();
+	} else { 
+		finalResult.textContent = 'Guess again!';
+		finalResult.style.backgroundColor = 'red';
+		if (userGuess > number) { 
+			loworHi.textContent = 'Your guess was too high!';
+		} else if (userGuess < number) { 
+			loworHi.textContent = 'Your guess was too low!';
+		}
+	   } 
+//add event listener for the submit button! 
+	   guessSubmit.addEventListener('click', checkGuess);
+//increase guess amounts by one and reset it each time for a new guess.
+	   guessCount++;
+	   guessInput.value = '';
+	   guessInput.
+	   focus();
+	}
+
 
 
 
