@@ -100,7 +100,7 @@ ctx.fillText("New Numbers", 10, 50);
 ctx.font = "20px Arial";
 ctx.fillText("Guess a number from 1-50 using the up and down arrow keys!", 70, 150);
 ctx.fillText("You have 10 attempts.", 230, 180)
-//defining main game 
+
 
 
 
