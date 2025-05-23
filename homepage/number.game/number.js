@@ -3,7 +3,20 @@ const canvas = document.getElementById("mycanvas");
 const ctx = canvas.getContext("2d");
 
 //generating random number to be guessed.
-let number = [Math.floor(Math.random() * 20)]
+let number = [Math.floor(Math.random() * 50) + 1];
+
+//query selectors for input statements in response to guess.
+const guessesLeft = document.querySelector('.guessesLeft');
+const finalResult = document.querySelector('.finalResult');
+const loworHi = document.querySelector('.loworHi');
+
+//query selectors for the input and submit input. 
+const guessInput = document.querySelector('.guessInput');
+const.guessSubmit = document.querySelector('.guessSubmit');
+
+//variable assigning to guess and resetting the game.
+let guessCount = 1;
+let resetButton;
 
 
 
@@ -43,7 +56,7 @@ ctx.fillText("New Numbers", 10, 50);
 
 //instructions under the title. 
 ctx.font = "20px Arial";
-ctx.fillText("Guess a number from 1-20 using the up and down arrow keys!", 70, 150);
+ctx.fillText("Guess a number from 1-50 using the up and down arrow keys!", 70, 150);
 ctx.fillText("You have 10 attempts.", 230, 180)
 //defining main game 
 
