@@ -1,7 +1,30 @@
 const canvas = document.getElementById("mycanvas");
 
 const ctx = canvas.getContext("2d");
+let RandomNumber = math.floor(Math.random() * 50) + 1;
+let attemptsleft = 10;
+let userGuess = 1; //beginning starting number! 
 
+const guessesLeft = document.querySelector('.guessesleft');
+const finalResult = document.querySelector9('finalResult');
+const loworHi = document.querySelector('.loworHi');
+//these set the text input after a guess! guessesleft is for displaying guesses left, and final result is for the "you won" or "game over" text options.
+
+//keydown events for guessing! 
+document.addEventListener("keydown", (event) => [
+	if (event.key = "ArrowUp") { 
+		UserGuess = Math.min(userGuess + 1, 50);
+		} else if (event.key = "ArrowDown") { 
+			userGuess = Math.max(userGuess - 1, 50); 
+		} else if (event.key = "Enter") { 
+			checkGuess();
+		} 
+] 
+//checkGuess function defined below. 
+
+
+
+/*
 //generating random number to be guessed.
 let number = Math.floor(Math.random() * 50) + 1;
 
@@ -60,7 +83,7 @@ function checkGuess() {
 		checkGuess();
 	}	
 
-
+*/
 
 //main background where the game will be.    
 ctx.fillStyle = "PowderBlue";
@@ -71,8 +94,8 @@ ctx.fillStyle="CadetBlue";
 ctx.fillRect(700, 0, 900, 700);
 
 //bottom bar where points and options to input number will be. 
-ctx.fillStyle="Blue";
-ctx.fillRect=(0, 700, 900, 900);
+ctx.fillStyle="CadetBlue";
+ctx.fillRect(0, 700, 900, 900);
 
 //making bottom right circle. 
 ctx.beginPath();
@@ -90,6 +113,15 @@ ctx.lineTo(750,700);
 ctx.fillStyle = "CadetBlue"
 ctx.fill();
 ctx.stroke();
+
+//making input main box outline
+ctx.fillStyle = "CadetBlue";
+ctx.fillRect(140, 230, 360, 50);
+
+//adding in smaller white box inside the input main box.
+ctx.fillStyle = "White";
+ctx.fillRect(270, 245, 210, 25);
+ctx.fillStyle = "CadetBlue";
 
 
 //title of game on the top-left
