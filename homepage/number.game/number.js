@@ -4,24 +4,42 @@ const ctx = canvas.getContext("2d");
 let RandomNumber = math.floor(Math.random() * 50) + 1;
 let attemptsleft = 10;
 let userGuess = 1; //beginning starting number! 
+let gameRunning = true;
 
-const guessesLeft = document.querySelector('.guessesleft');
+const guessesLeft = document.querySelector('.guessesLeft');
 const finalResult = document.querySelector9('finalResult');
 const loworHi = document.querySelector('.loworHi');
 //these set the text input after a guess! guessesleft is for displaying guesses left, and final result is for the "you won" or "game over" text options.
 
 //keydown events for guessing! 
-document.addEventListener("keydown", (event) => [
+document.addEventListener("keydown", (event) => {
 	if (event.key = "ArrowUp") { 
-		UserGuess = Math.min(userGuess + 1, 50);
+		userGuess = Math.min(userGuess + 1, 50);
 		} else if (event.key = "ArrowDown") { 
 			userGuess = Math.max(userGuess - 1, 50); 
 		} else if (event.key = "Enter") { 
 			checkGuess();
 		} 
-] 
+});
 //checkGuess function defined below. 
-
+function checkGuess() { 
+  attemptsleft--;
+  if (attemptsleft >= 1) { 
+	guessesLeft.textContent = 'Guesses left: ${attemptsleft}';
+ }
+  
+if (userGuess = RandomNumber) {
+	finalResult.textContent = 'Correct! You guessed the right number!';
+	disableGame();
+	gameRunning = false;
+	loworHi.textContent = '';
+} else if (attemptsleft = 0) {
+	finalResult.textContent = 'Game over! You ran out of attempts.';
+	disableGame();
+	gameRunning = false;
+	loworHi.textContent = '';
+} else if 
+	
 
 
 /*
