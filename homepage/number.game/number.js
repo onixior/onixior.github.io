@@ -1,22 +1,22 @@
-const canvas = document.getElementById("mycanvas");
+/* const canvas = document.getElementById("mycanvas");
 
 const ctx = canvas.getContext("2d");
-let RandomNumber = math.floor(Math.random() * 50) + 1;
+let RandomNumber = Math.floor(Math.random() * 50) + 1;
 let attemptsleft = 10;
 let userGuess = 1; //beginning starting number! 
 let gameRunning = true;
 
 const guessesLeft = document.querySelector('.guessesLeft');
-const finalResult = document.querySelector9('finalResult');
+const finalResult = document.querySelector('.finalResult');
 const loworHi = document.querySelector('.loworHi');
 //these set the text input after a guess! guessesleft is for displaying guesses left, and final result is for the "you won" or "game over" text options.
 
 //keydown events for guessing! 
 document.addEventListener("keydown", (event) => {
 	if (event.key = "ArrowUp") { 
-		userGuess = Math.min(userGuess + 1, 50);
+		userGuess = userGuess++;
 		} else if (event.key = "ArrowDown") { 
-			userGuess = Math.max(userGuess - 1, 50); 
+			userGuess = userGuess--; 
 		} else if (event.key = "Enter") { 
 			checkGuess();
 		} 
@@ -38,11 +38,30 @@ if (userGuess = RandomNumber) {
 	disableGame();
 	gameRunning = false;
 	loworHi.textContent = '';
-} else if 
-	
+} else { 
+	finalResult.textContent = 'Guess again!';
+	finalResult.style.backgroundColor = 'red';
+	if (userGuess > RandomNumber) { 
+		loworHi.textContent = 'Too big! Guess lower.';
+	} else if (userGuess < RandomNumber) { 
+		loworHi.textContent = 'Too small! Guess higher.';
+	}
 
+}
+}
+//set the disable game! 
+function disableGame() { 
+	gameRunning = false;
+	document.removeEventListener("keydown", (event) => {});
+} 
+//set if statement for gamerunning. 
 
-/*
+if (gameRunning = true) { 
+	checkGuess();
+}
+*/
+const canvas = document.getElementById("mycanvas");
+const ctx = canvas.getContext("2d");
 //generating random number to be guessed.
 let number = Math.floor(Math.random() * 50) + 1;
 
@@ -101,7 +120,7 @@ function checkGuess() {
 		checkGuess();
 	}	
 
-*/
+
 
 //main background where the game will be.    
 ctx.fillStyle = "PowderBlue";
